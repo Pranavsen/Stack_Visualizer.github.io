@@ -44,7 +44,7 @@ class Stack extends Array {
 		}
 	}
 }
-const s1 = new Stack(1, 2, 3);
+const s1 = new Stack(3,2,1);
 s1.display_elements(s1);
 function Push() {
 	var info = text.value;

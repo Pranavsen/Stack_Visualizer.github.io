@@ -1,7 +1,11 @@
+
 html {
-	margin: 5%;
-	background-color: #201b23;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	/* background-color: #201b23; */
 }
+
 ul li {
 	list-style-type: none;
 	border: 3px solid black;
@@ -13,31 +17,33 @@ ul li {
 	border-radius: 18%;
 	font-size: large;
 	font-weight: bolder;
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
 }
+
 li:nth-child(1) {
-	background-color: #f9ed69;
+	background-color: #ef2d2d;
 }
 li:nth-child(2) {
-	background-color: #f07b3f;
+	background-color: #e7743b;
 }
 li:nth-child(3) {
-	background-color: #03f5e1;
+	background-color: #12766e;
 }
 li:nth-child(4) {
-	background-color: #17b978;
+	background-color: #f10751;
 }
 li:nth-child(5) {
-	background-color: #f10751;
+	background-color: #1e845b;
 }
 li:nth-child(6) {
 	background-color: #0075f6;
 }
 li:nth-child(7) {
-	background-color: #e4f169;
+	background-color: #629329;
 }
 li:nth-child(8) {
-	background-color: #a2ef44;
+	background-color: #823441;
 }
 li:nth-child(9) {
 	background-color: #f9ed69;
@@ -65,11 +71,11 @@ li:nth-child(16) {
 }
 
 #text {
-	width: 30%;
+	width: 95%;
 	margin-bottom: 1%;
 }
 input[type=text] {
-	height: 30%;
+	height: 5%;
 	border: 4px solid #aaa;
 	border-radius: 5px;
 	outline: none;
@@ -84,7 +90,18 @@ input[type=text]:focus {
 	box-shadow: 0 0 12px 0 dodgerBlue;
 }
 .content {
-	margin: 3%;
+	margin: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	width: auto;
+	
+}
+.buttons{
+	margin-top: 15px;
+}
+.lineinput{
+	margin-left: 2em;
 }
 h1 {
 	margin-bottom: 5%;
@@ -102,6 +119,7 @@ h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	transform: translateY(-50%);
+	color: aliceblue;
 }
 /*Animation*/
 /* .anim-typewriter {
@@ -128,16 +146,19 @@ h1 {
 #stack {
 	font-size: xx-large;
 	font-weight: bold;
-	font-family: 'Concert One', cursive;
+	font-family: "Trirong", serif;
+	color: antiquewhite;
 }
 #pop_stack {
 	font-size: xx-large;
 	font-weight: bold;
-	font-family: 'Concert One', cursive;
+	font-family: "Trirong", serif;
+	color: antiquewhite;
 }
 label {
 	font-size: xx-large;
-	font-family: 'Concert One', cursive;
+	font-family: "Trirong", serif;
+	color: antiquewhite;
 }
 #pop,
 #push {
@@ -147,14 +168,14 @@ label {
 	padding: 4px;
 	transition: 0.8s;
 	position: relative;
-	width: 8%;
+	width: 30%;
 	overflow: hidden;
 }
 #push {
 	margin-right: 3.5%;
 }
 #pop {
-	margin-left: 6%;
+	margin-left: 3.5%;
 }
 #push:hover {
 	background: rgb(8, 74, 47);
